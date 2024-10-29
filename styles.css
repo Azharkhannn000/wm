@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    background-size: cover;
+    font-family: "Josefin Sans", sans-serif;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 55rem 20rem;
+    width: 1250px;
+   
+}
+.base{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+.were{
+    color: hsl(0, 36%, 70%);
+}
+p{
+    color: hsl(0, 36%, 70%);
+}
+h1{
+    font-size: 50px;
+}
+img{
+    width: 600px;
+}
+.but{
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 36%, 70%);
+    position: relative;
+    right: 50px;
+}
+.label-two{
+    height: 55px;
+    width: 450px;
+    border-radius: 40px;
+    border: 1px solid hsl(0, 36%, 70%);
+    background-color: hsl(0, 30%, 95%);
+}
+
+@media screen and (max-width:376px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: grid;
+        grid-template-rows: 30% 40% 40% 30%;
+        min-height: 100vh;
+        font-size: 15px;
+    }
+    .base{
+        background-image: url(images/hero-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+    img{
+        width: 60px;
+    }
+    .label-two{
+        width: 250px;
+    }
+}
